@@ -1,0 +1,119 @@
+{
+    "testingURL" : "https://www.kayak.com/",
+    "secondURL"  :  "https://www.kayak.com/flights/FRA-SXF/2019-09-05/2019-09-12/4adults/children-1S-1L-11?sort=bestflight_a",
+
+    "locator":{
+
+        "pageLocators":{
+            "tripDropdown1": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+            "tripSelection1": "/html[1]/body[1]/div[4]/div[1]/div[2]/ul[1]/li[2]",
+            "tripSelection2": "/html[1]/body[1]/div[4]/div[1]/div[2]/ul[1]/li[3]",
+            "travlerSelection": "//button[contains(@id,'-travelersAboveForm-dialog-trigger')]",
+            "adultSelection" : "//div[contains(@id,'-travelersAboveForm-adults')]//div[3]",
+            "getAdultCount": "//input[contains(@id,'-travelers-AboveForm-adults-input')]",
+            "adultCountDown":"Common-Widgets-Button-StyleJamButton size-m stylejam decrementor-js _idf _jS4 _ibc _jTN _iFA _ia7 _ioE _ikD _ib4 _id7 _irE _ib3 _h-Y _idj _igO _idG _iad _iaf _iaa _iqC _ia4 _ia- _ibH _im4 _iai NumberBox-disabled _jmW",
+            "seniorsAdd": "//div[contains(@id,'-travelersAboveForm-seniors')]//div[3]",
+            "youthAdd" : "//div[contains(@id,'-travelersAboveForm-youth')]//div[3]",
+            "seatInfantAdd": "//div[contains(@id,'-travelersAboveForm-seatInfant')]//div[3]",
+            "lapInfantAdd": "//div[contains(@id,'-travelersAboveForm-lapInfant')]//div[3]",
+            "timeFrom": "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]",
+            "adultsCount" : "/html[1]/body[1]/div[79]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/input[1]",
+            "childAdd": "//div[contains(@id,'-travelersAboveForm-child')]//div[3]",
+            "searchField:" : "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+            "addField" : "/html[1]/body[1]/div[2]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
+            "searchData" : "//input[contains(@id,'-origin-airport')]",
+            "selection1" : "//div[@class='item-info']",
+            "searchDestinationInput" : "//input[contains(@id ,'-destination-airport')]",
+            "departureDateClick" : "_iaf _iEc _ia1 _i7r _iv1 _j0z _iPK _j0x _j0B _iai",
+            "inputDepartureDate" : "input _iKG _id7 _ial _ii0 _iQj _iaj _ihh _idE",
+            "arrivalDateClick" : "//div[contains(@id,'-dateRangeInput-display-end')]//div[@class='_iaf _iEU _iam _iai']", 
+            "arrivalDateInput" : "input _iKG _id7 _ial _ii0 _iQj _iaj _ihh _idE",
+            "finalSearch" : "//*[@class='_ivP _iv1']",
+            "randomClick" : "//div[@class='keel-container s-t-bp']",
+            "errorMoreAdults" : "//div[contains(@id,'-travelersAboveForm-errorMessage')]",
+            "getChildCount": "//input[contains(@id,'-travelersAboveForm-child-input')]",
+            "originScenario2": "//li[@id='ap-HND/21033']//div[@class='item-info']",
+            "destinationScenario2": "//li[@id='ap-CDG/36014']//div[@class='item-info']",
+            "originScenario3": "//li[@id='ap-AMS/1334']//div[@class='item-info']",
+            "destinationScenario3": "//li[@id='ap-CAN/17708']//div[@class='item-info']",
+            "originScenario4": "//li[@id='ap-HHN/26939']//div[@class='item-info']",
+            "destinationScenario4": "//li[@id='ap-SXF/9109']//div[@class='item-info']"
+        }
+        
+
+    },
+
+        "Scenario1" :{
+            "originInput" : "Hartsfield-jackson Atlanta International Airport",
+            "originSelection" : "Hartsfield-jackson",
+            "destinationInput" : "Dubai International Airport (DXB)",
+            "destionationSelection" : "Dubai, United Arab Emirates",
+            "passangers" : {
+                "Adults" : 10,
+                "Seniors" : 0,
+                "Youth" : 0,
+                "Child" : 0,
+                "seatInfant" : 0,
+                "lapinfant" : 0
+            },
+            "Departure" : "08/05/2019",
+            "Arrival" : "08/16/2019"
+        
+        },
+
+        "Scenario2" :{
+            "originInput" : "Tokyo Ha",
+            "originSelection" : "Haneda",
+            "destinationInput" : "Paris Charl",
+            "destionationSelection" : "Paris Charles de Gaulle Airport (CDG)",
+            "passangers" : {
+                "Adults" : 2,
+                "Seniors" : 1,
+                "Youth" : 1,
+                "Child" : 1,
+                "seatInfant" : 0,
+                "lapinfant" : 0
+            },
+            "Departure" : "08/05/2019",
+            "Arrival" : "08/16/2019"
+        
+        },
+
+        "Scenario3" :{
+            "originInput" : "AMS",
+            "originSelection" : "Amsterdam Airpoty Schiphol (AMS)",
+            "destinationInput" : "CAN",
+            "destionationSelection" : "Guangzhou, China (CAN)",
+            "passangers" : {
+                "Adults" : 2,
+                "Seniors" : 2,
+                "Youth" : 2,
+                "Child" : 2,
+                "seatInfant" : 0,
+                "lapinfant" : 0
+            },
+            "Departure" : "08/05/2019",
+            "Arrival" : "08/16/2019"
+        
+        },
+
+        "Scenario4" :{
+            "originInput" : "Frankfurt Airport",
+            "originSelection" : "Frankfurt am Main, Germany(HHN)",
+            "destinationInput" : "Berlin",
+            "destionationSelection" : "Schonefeld(SXF)",
+            "passangers" : {
+                "Adults" : 4,
+                "Seniors" : 0,
+                "Youth" : 0,
+                "Child" : 1,
+                "seatInfant" : 1,
+                "lapinfant" : 1
+            },
+            "Departure" : "08/05/2019",
+            "Arrival" : "08/16/2019"
+        
+        }
+}
+
+
